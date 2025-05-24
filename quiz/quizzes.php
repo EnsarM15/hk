@@ -1,5 +1,5 @@
 <?php
-require_once '/db.php';
+require_once 'db.php';
 
 // Get featured quizzes
 $query = "SELECT * FROM quizzes WHERE is_featured = 1 LIMIT 3";

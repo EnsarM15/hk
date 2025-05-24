@@ -57,4 +57,4 @@ function displayFlashMessage() {
         echo "<div class='alert alert-{$class}'>{$message}</div>";
     }
 }
-?>
+

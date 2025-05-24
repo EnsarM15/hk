@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="app-container">
-        <?php include 'components/header.php'; ?>
+        <?php include 'header.php'; ?>
         
         <main class="main-content">
             <div class="hero fade-in">
@@ -28,7 +28,7 @@
             <section class="featured-quizzes">
                 <h2>Featured Quizzes</h2>
                 <div class="quiz-grid">
-                    <?php include 'components/featured_quizzes.php'; ?>
+                    <?php include 'quizzes.php'; ?>
                 </div>
             </section>
             
@@ -54,7 +54,7 @@
             </section>
         </main>
         
-        <?php include 'components/footer.php'; ?>
+        <?php include 'footer.php'; ?>
     </div>
     
     <script src="js/main.js"></script>
