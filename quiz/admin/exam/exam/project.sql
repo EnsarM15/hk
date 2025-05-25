@@ -1,30 +1,9 @@
--- phpMyAdmin SQL Dump
--- version 4.6.4
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Nov 06, 2017 at 11:50 AM
--- Server version: 5.7.14
--- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
---
--- Database: `project`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
 
 CREATE TABLE `admin` (
   `admin_id` int(11) NOT NULL,
@@ -32,28 +11,20 @@ CREATE TABLE `admin` (
   `password` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `admin`
---
+
 
 INSERT INTO `admin` (`admin_id`, `email`, `password`) VALUES
 (1, 'sunnygkp10@gmail.com', '123456'),
 (2, 'admin@admin.com', 'admin');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `answer`
---
 
 CREATE TABLE `answer` (
   `qid` text NOT NULL,
   `ansid` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `answer`
---
+
 
 INSERT INTO `answer` (`qid`, `ansid`) VALUES
 ('55892169bf6a7', '55892169d2efc'),
@@ -102,10 +73,7 @@ INSERT INTO `feedback` (`id`, `name`, `email`, `subject`, `feedback`, `date`, `t
 ('5586ee27af2c9', 'vikas', 'vikas@gmail.com', 'trial feedback', 'triaal feedbak', '2015-06-21', '07:02:31pm'),
 ('5589858b6c43b', 'nik', 'nik1@gmail.com', 'good', 'good site', '2015-06-23', '06:12:59pm');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `history`
+`
 --
 
 CREATE TABLE `history` (

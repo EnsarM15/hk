@@ -21,7 +21,7 @@ $result = mysqli_query($con,"DELETE FROM user WHERE email='$demail' ") or die('E
 header("location:dash.php?q=1");
 }
 }
-//remove quiz
+
 if(isset($_SESSION['key'])){
 if(@$_GET['q']== 'rmquiz' && $_SESSION['key']=='sunny7785068889') {
 $eid=@$_GET['eid'];
